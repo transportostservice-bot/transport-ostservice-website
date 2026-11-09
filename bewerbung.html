@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+          content="Bewirb dich als Fahrer bei Transport Ostservice Schwarzenberg Erzgebirge.">
+
+    <title>Fahrerbewerbung | Transport Ostservice</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>TRANSPORT OSTSERVICE</h1>
+        <p>Schwarzenberg Erzgebirge</p>
+    </header>
+
+    <nav>
+        <a href="index.html">Startseite</a>
+        <a href="ueber-uns.html">Über uns</a>
+        <a href="fuhrpark.html">Fuhrpark</a>
+        <a href="leistungen.html">Leistungen</a>
+        <a href="bewerbung.html">Fahrer werden</a>
+        <a href="kontakt.html">Kontakt</a>
+    </nav>
+
+    <div class="hero">
+        <div class="hero-content">
+
+            <p class="hero-label">
+                DEIN PLATZ IN UNSEREM TEAM
+            </p>
+
+            <h2>WERDE TEIL UNSERES TEAMS!</h2>
+
+            <h3>Deine Karriere beginnt bei uns.</h3>
+
+            <div class="hero-line"></div>
+
+            <p>
+                Gemeinsam unterwegs –
+                zuverlässig, stark und im Team!
+            </p>
+
+        </div>
+    </div>
+
+    <!-- BEWERBUNGSFORMULAR -->
+
+    <section>
+
+        <h2>Deine Fahrerbewerbung</h2>
+
+        <div class="section-line"></div>
+
+        <p>Wir freuen uns auf deine Bewerbung!</p>
+
+        <form id="bewerbungsformular"
+              class="application-form"
+              action="https://formspree.io/f/xdeevryd"
+              method="POST">
+
+            <input type="hidden" name="_subject" value="Neue Fahrerbewerbung – Transport Ostservice">
+            <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off">
+
+            <label for="fahrername">Fahrername</label>
+            <input type="text" id="fahrername" name="Fahrername"
+                   required maxlength="100" autocomplete="nickname"
+                   placeholder="Dein Fahrername">
+
+            <label for="discord">Discord-Name</label>
+            <input type="text" id="discord" name="Discord-Name"
+                   required maxlength="100" placeholder="Dein Discord-Name">
+
+            <label for="spiel">Welches Spiel fährst du?</label>
+            <select id="spiel" name="Spiel" required>
+                <option value="">Bitte auswählen</option>
+                <option>Euro Truck Simulator 2</option>
+                <option>American Truck Simulator</option>
+                <option>Beide Spiele</option>
+            </select>
+
+            <label for="fahrzeug">Dein Lieblings-LKW</label>
+            <input type="text" id="fahrzeug" name="Lieblings-LKW"
+                   maxlength="100" placeholder="Zum Beispiel Scania S">
+
+            <label for="erfahrung">Deine Fahrerfahrung</label>
+            <textarea id="erfahrung" name="Fahrerfahrung" rows="4"
+                      maxlength="3000"
+                      placeholder="Erzähle uns etwas über dich und deine Erfahrung."></textarea>
+
+            <label for="nachricht">Deine Nachricht</label>
+            <textarea id="nachricht" name="Nachricht" rows="4"
+                      maxlength="3000" required
+                      placeholder="Warum möchtest du zu uns?"></textarea>
+
+            <label class="consent">
+                <input type="checkbox" id="datenschutz"
+                       name="Datenschutz-Zustimmung" value="Ja" required>
+                <span>Ich habe die <a href="datenschutz.html">Datenschutzerklärung</a>
+                gelesen und stimme der Verarbeitung meiner Angaben zur Bearbeitung
+                meiner Bewerbung zu.</span>
+            </label>
+
+            <button id="bewerbung-absenden" type="submit" class="button">
+                Bewerbung absenden
+            </button>
+
+            <p id="formularmeldung" role="status" aria-live="polite"></p>
+        </form>
+
+    </section>
+
+    <footer>
+
+        <p>
+            © 2026 Transport Ostservice Schwarzenberg Erzgebirge
+        </p>
+
+        <p>
+            Gemeinsam unterwegs – zuverlässig,
+            stark und im Team!
+        </p>
+
+        <p>
+            <a href="impressum.html">Impressum</a>
+            |
+            <a href="datenschutz.html">Datenschutz</a>
+        </p>
+
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
+
+

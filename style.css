@@ -1,0 +1,578 @@
+
+/* =========================================
+   TRANSPORT OSTSERVICE
+   SCHWARZENBERG ERZGEBIRGE
+   GAMING NEON DESIGN - BLAU / WEISS
+========================================= */
+
+
+/* 1. GRUNDDESIGN */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background:
+        radial-gradient(
+            ellipse at top,
+            rgba(22, 140, 255, 0.16),
+            transparent 55%
+        ),
+        #080f1c;
+    color: #ffffff;
+    line-height: 1.6;
+    min-height: 100vh;
+}
+
+
+/* 2. ÜBERSCHRIFTEN */
+
+h1, h2, h3 {
+    text-shadow: 0 0 8px rgba(22, 140, 255, 0.45);
+}
+
+
+/* 3. KOPFBEREICH */
+
+header {
+    background: linear-gradient(
+        135deg,
+        #101d32,
+        #07182e
+    );
+    padding: 25px 15px;
+    text-align: center;
+    border-bottom: 3px solid #168cff;
+    box-shadow: 0 4px 20px rgba(22, 140, 255, 0.25);
+}
+
+header h1 {
+    color: #168cff;
+    font-size: 30px;
+    text-shadow: 0 0 15px #168cff;
+    letter-spacing: 2px;
+}
+
+header p {
+    margin-top: 10px;
+    color: #c5d7ef;
+}
+
+
+/* 4. NAVIGATION */
+
+nav {
+    background: #07182e;
+    padding: 20px 10px;
+    text-align: center;
+    border-bottom: 2px solid #168cff;
+    box-shadow: 0 4px 15px rgba(0, 140, 255, 0.3);
+}
+
+nav a {
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    margin: 8px 14px;
+    font-size: 16px;
+    font-weight: bold;
+    transition: 0.3s ease;
+}
+
+nav a:hover {
+    color: #168cff;
+    text-shadow: 0 0 12px #168cff;
+    transform: translateY(-3px);
+}
+
+
+/* 5. HERO / STARTSEITE */
+
+.hero {
+    min-height: 520px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 80px 20px;
+    text-align: center;
+
+    background-image:
+        linear-gradient(
+            rgba(3, 12, 27, 0.45),
+            rgba(3, 12, 27, 0.75)
+        ),
+        url("hero.png");
+
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    border-bottom: 3px solid #168cff;
+    box-shadow: 0 8px 25px rgba(22, 140, 255, 0.12);
+}
+
+.hero-content {
+    width: 100%;
+    max-width: 1100px;
+    padding: 30px;
+    text-align: center;
+}
+
+.hero-label {
+    color: #00aaff;
+    letter-spacing: 4px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    font-size: 15px;
+    text-shadow: 0 0 12px #168cff;
+}
+
+.hero h2 {
+    font-size: 48px;
+    color: white;
+    margin-bottom: 15px;
+    text-shadow: 0 0 20px #168cff;
+}
+
+.hero h3 {
+    font-size: 25px;
+    color: #168cff;
+    margin: 15px 0 25px;
+}
+
+.hero-content p {
+    line-height: 1.6;
+    font-size: 18px;
+    margin-bottom: 25px;
+}
+
+
+/* 6. HERO-LINIE */
+
+.hero-line {
+    width: 160px;
+    height: 3px;
+    background: #168cff;
+    margin: 20px auto;
+    border-radius: 5px;
+    box-shadow: 0 0 10px #168cff,
+                0 0 20px rgba(22, 140, 255, 0.6);
+}
+
+
+/* 7. SCANIA-BILD AUF DER STARTSEITE */
+
+.hero-truck {
+    display: block;
+    width: 90%;
+    max-width: 950px;
+    height: auto;
+    margin: 30px auto;
+    border-radius: 12px;
+    filter: drop-shadow(
+        0 0 18px rgba(22, 140, 255, 0.45)
+    );
+}
+
+
+/* 8. BUTTONS */
+
+.button {
+    display: inline-block;
+    background: #168cff;
+    color: white;
+    padding: 14px 28px;
+    margin: 8px;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+    border: 1px solid #168cff;
+    box-shadow: 0 0 8px rgba(22, 140, 255, 0.35);
+    transition: 0.3s ease;
+}
+
+.button:hover {
+    background: #0063c7;
+    box-shadow:
+        0 0 12px #168cff,
+        0 0 25px rgba(22, 140, 255, 0.6);
+    transform: translateY(-3px);
+}
+
+
+/* 9. INHALTSBEREICHE */
+
+section {
+    padding: 60px 20px;
+    text-align: center;
+
+    background: linear-gradient(
+        180deg,
+        rgba(16, 29, 50, 0.45),
+        rgba(8, 15, 28, 0.85)
+    );
+
+    border-bottom: 1px solid rgba(22, 140, 255, 0.2);
+}
+
+section h2 {
+    color: #168cff;
+    margin-bottom: 20px;
+    font-size: 30px;
+    text-shadow: 0 0 12px rgba(22, 140, 255, 0.5);
+}
+
+section p {
+    color: #d4e4f7;
+    font-size: 17px;
+    margin-bottom: 20px;
+}
+
+
+/* 10. FUHRPARK-BEREICH */
+
+.fleet-container {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    flex-wrap: wrap;
+    gap: 25px;
+    max-width: 1200px;
+    margin: 35px auto;
+    padding: 0 15px;
+}
+
+.fleet-card {
+    background: linear-gradient(
+        145deg,
+        #142640,
+        #0b1729
+    );
+
+    border: 1px solid rgba(22, 140, 255, 0.55);
+    border-radius: 12px;
+    padding: 22px;
+    width: 280px;
+    max-width: 100%;
+
+    box-shadow: 0 0 15px rgba(22, 140, 255, 0.2);
+    transition: 0.3s ease;
+    overflow: hidden;
+}
+
+.fleet-card:hover {
+    transform: translateY(-6px);
+    border-color: #168cff;
+    box-shadow:
+        0 0 15px #168cff,
+        0 0 28px rgba(22, 140, 255, 0.35);
+}
+
+.fleet-card h3 {
+    color: #168cff;
+    margin: 15px 0;
+    font-size: 21px;
+}
+
+.fleet-card p {
+    margin: 12px 0;
+    color: #d4e4f7;
+}
+
+
+/* 11. FUHRPARK-BILDER */
+
+.fleet-card img {
+    display: block;
+    width: 100%;
+    max-width: 210px;
+    height: 130px;
+    object-fit: contain;
+    object-position: center;
+    margin: 0 auto 15px;
+    border-radius: 8px;
+    filter: drop-shadow(
+        0 0 8px rgba(22, 140, 255, 0.25)
+    );
+}
+
+.truck-icon {
+    font-size: 55px;
+    margin: 10px 0;
+}
+
+
+/* 12. BEWERBUNGSFORMULAR */
+
+.application-form {
+    max-width: 650px;
+    margin: 35px auto;
+    padding: 30px;
+
+    background: linear-gradient(
+        145deg,
+        #142640,
+        #0b1729
+    );
+
+    border: 1px solid #168cff;
+    border-radius: 12px;
+    text-align: left;
+
+    box-shadow: 0 0 20px rgba(22, 140, 255, 0.2);
+}
+
+.application-form label {
+    display: block;
+    margin: 18px 0 8px;
+    color: #168cff;
+    font-weight: bold;
+}
+
+.application-form input:not([type="checkbox"]),
+.application-form select,
+.application-form textarea {
+    width: 100%;
+    padding: 13px;
+    background: #081426;
+    color: white;
+    border: 1px solid #168cff;
+    border-radius: 6px;
+    font-size: 15px;
+}
+
+.application-form input:focus,
+.application-form select:focus,
+.application-form textarea:focus {
+    outline: none;
+    box-shadow: 0 0 10px rgba(22, 140, 255, 0.6);
+}
+
+.application-form textarea {
+    resize: vertical;
+}
+
+.application-form .consent {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    color: white;
+    font-weight: normal;
+}
+
+.application-form .consent input {
+    margin-top: 4px;
+}
+
+.application-form button {
+    cursor: pointer;
+    border: none;
+    margin-top: 20px;
+}
+
+#formularmeldung {
+    color: #00b7ff;
+    margin-top: 15px;
+}
+
+
+/* 13. FUSSZEILE */
+
+footer {
+    background: #101d32;
+    padding: 25px 15px;
+    text-align: center;
+    color: #9eb4d0;
+    border-top: 2px solid #168cff;
+    font-size: 14px;
+    box-shadow: 0 -4px 20px rgba(22, 140, 255, 0.12);
+}
+
+
+/* 14. TABLET */
+
+@media (max-width: 768px) {
+
+    header h1 {
+        font-size: 25px;
+    }
+
+    .hero {
+        min-height: 450px;
+        padding: 60px 15px;
+    }
+
+    .hero h2 {
+        font-size: 34px;
+    }
+
+    .hero h3 {
+        font-size: 21px;
+    }
+
+    .hero-content {
+        padding: 15px;
+    }
+
+    .hero-truck {
+        width: 100%;
+        margin: 20px auto;
+    }
+
+    .fleet-card {
+        width: 280px;
+    }
+
+    .fleet-card img {
+        max-width: 190px;
+        height: 120px;
+    }
+
+    .application-form {
+        padding: 20px;
+    }
+}
+
+
+/* 15. SMARTPHONE */
+
+@media (max-width: 480px) {
+
+    header h1 {
+        font-size: 21px;
+    }
+
+    header p {
+        font-size: 14px;
+    }
+
+    nav {
+        padding: 12px 5px;
+    }
+
+    nav a {
+        margin: 6px;
+        font-size: 14px;
+    }
+
+    .hero h2 {
+        font-size: 27px;
+    }
+
+    .hero h3 {
+        font-size: 18px;
+    }
+
+    .hero-label {
+        font-size: 11px;
+        letter-spacing: 2px;
+    }
+
+    .hero-truck {
+        width: 100%;
+    }
+
+    .button {
+        padding: 12px 20px;
+        font-size: 14px;
+    }
+
+    section {
+        padding: 40px 15px;
+    }
+
+    .fleet-container {
+        gap: 18px;
+    }
+
+    .fleet-card {
+        width: 100%;
+        max-width: 300px;
+        padding: 18px;
+    }
+
+    .fleet-card img {
+        max-width: 170px;
+        height: 110px;
+    }
+}
+
+
+/* 16. BEWEGUNGSREDUZIERUNG */
+
+@media (prefers-reduced-motion: reduce) {
+
+    * {
+        animation: none !important;
+        transition: none !important;
+        scroll-behavior: auto !important;
+    }
+}
+
+/* TECHNISCHE FAHRZEUGDATEN */
+
+.truck-details {
+    margin-top: 18px;
+    padding: 12px;
+    background: rgba(3, 12, 27, 0.65);
+    border: 1px solid rgba(22, 140, 255, 0.4);
+    border-radius: 8px;
+    text-align: left;
+}
+
+.truck-details p {
+    font-size: 14px;
+    margin: 7px 0;
+    color: #d4e4f7;
+}
+
+.truck-details strong {
+    color: #168cff;
+}
+
+/* FOOTER-LINKS */
+
+footer a,
+footer a:visited {
+    color: #168cff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #ffffff;
+    text-decoration: underline;
+}/* DATENSCHUTZ-LINK IM BEWERBUNGSFORMULAR */
+
+.application-form a,
+.application-form a:visited {
+    color: #168cff;
+    text-decoration: none;
+}
+
+.application-form a:hover {
+    color: #ffffff;
+    text-decoration: underline;
+}/* E-MAIL-LINKS */
+
+a[href^="mailto:"] {
+    color: #168cff;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+a[href^="mailto:"]:visited {
+    color: #168cff;
+}
+
+a[href^="mailto:"]:hover {
+    color: #ffffff;
+}
